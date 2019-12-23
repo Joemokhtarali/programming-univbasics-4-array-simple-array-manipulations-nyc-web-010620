@@ -28,19 +28,11 @@ def using_concat(arr1, arr2)
 end 
 
 def using_insert(array, element) 
-  array.push(element)
+  array.insert(element)
 end
 
-def using_uniq(array)  // [1, 2, 1, 3, 2]
-  new_array = []
-  
-  array.each do |ele| 
-    if !new_array.include?(ele) 
-      new_array << ele
-    end
-  end 
-  
-  return new_array
+def using_uniq(array)  
+  array.uniq
 end 
 
 def using_delete(array, string)
