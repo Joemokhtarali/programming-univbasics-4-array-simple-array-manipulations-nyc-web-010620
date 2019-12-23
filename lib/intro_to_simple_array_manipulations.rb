@@ -44,16 +44,5 @@ def using_delete_at(array, idx)
 end
 
 def using_flatten(array)
-  new_array = []
-  array.each do |ele|
-    if isArray?(ele)
-      ele.each do |el|
-        new_array << el
-      end 
-      else 
-        new_array << ele
-      end 
-    end 
-        
-  return new_array
+  array.flatten
 end
